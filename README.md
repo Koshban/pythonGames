@@ -3,6 +3,8 @@ Some Fun Games made with Python
 First commit is for MineSweeper. Will add more with time.
 Next up is likely to be Snakes & Ladders.
 
+You will need Python version 3.9 or above.
+
 Contact info Feel free to contact me to discuss any issues, questions, or comments.
 
 My contact info can be found on my GitHub page.
