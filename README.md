@@ -7,7 +7,8 @@ Basic Info :
 Requirements : 
   You will need Python version 3.9 or above.
   Its coded on Windows10  and shoud work with most basic configurations.
-  If you want to run it on any other o/s , you might need to change the MessageBox command in "ctypes.windll.user32.MessageBoxW" in the MineSweeperCells Class.
+  #If you want to run it on any other o/s , you might need to change the MessageBox command in "ctypes.windll.user32.MessageBoxW" in the MineSweeperCells Class.
+  This has now been chnaged to use tkinter.messagebox to make it o/s agnostic.
 
 Contact Info : 
   Feel free to contact me to discuss any issues, questions, or comments.
