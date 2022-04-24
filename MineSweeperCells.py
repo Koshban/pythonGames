@@ -2,11 +2,10 @@
 Create the Basic Cell structure , Add Text to display, and control Cell behavior
 """
 
-from tkinter import Button, Label
+from tkinter import Button, Label, messagebox
 import utilities
 import random
 import settings
-import ctypes
 import sys
 
 
@@ -52,7 +51,8 @@ class Cell:
             self.show_cell()
             """If mines count == number of cells left then Player Wins"""
             if Cell.cell_count == settings.mined_count:
-                ctypes.windll.user32.MessageBoxW(0, 'You Won, Congrats!!', 'Game Over', 0)
+                # ctypes.windll.user32.MessageBoxW(0, 'You Won, Congrats!!', 'Game Over', 0)
+                messagebox.showinfo('Game Over', 'You Won, Congrats!!')
                 sys.exit()
 
         """If Cell is already Opened then cancel ability to have any other events"""
@@ -106,7 +106,8 @@ class Cell:
     def show_mine(self):
         """ Show its a Mine and Stop the Game"""
         self.cell_button_object.configure(bg='red')
-        ctypes.windll.user32.MessageBoxW(0, 'You Clicked on a Mine', 'Game Over', 0)
+        # ctypes.windll.user32.MessageBoxW(0, 'You Clicked on a Mine', 'Game Over', 0)
+        messagebox.showinfo('Game Over', 'Boom!! U Clicked On a Mine')
         sys.exit()
 
     def right_click_action(self, event):
